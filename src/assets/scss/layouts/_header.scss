@@ -1,0 +1,75 @@
+section.header{
+
+    .nav-top{
+        display: flex;
+        width: 100%;
+        height: 100px;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    .logo{
+        width: 28%;
+    }
+
+    .right-nav{
+        display: flex;
+        width: 70%;
+        justify-content: space-between;
+        height: 100%;
+        align-items: center;
+    }
+
+    .search{
+        width: 50%;
+
+        input{
+            width: 100%;
+            padding-left: .5rem;
+        }
+    }
+
+    .upload{
+
+        button{
+            border: none;
+            outline: none;
+            padding: 0.2rem 2rem;
+        }
+    }
+
+    .nav-btm{
+        display: flex;
+        width: 100%;
+        height: 50px;
+        align-items: center;
+        border-top: 1px solid white;
+        border-bottom: 1px solid white;
+
+        ul{
+            display: flex;
+            width: 100%;
+            justify-content: space-between;
+            padding: 0;
+            list-style: none;
+            margin: 0;
+
+            li{
+                width: 120px;
+                background: red;
+                position: relative;
+                &::after{
+                    content: "\002F";
+                    position: absolute;
+                    top: 0;
+                    right: 0;
+                }
+                &:last-child::after{
+                    content: "";
+                }
+            }
+        }
+    }
+
+    
+}

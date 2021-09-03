@@ -4,3 +4,8 @@
 /* base */
 @import './assets/scss/base/typography',
         'assets/scss/base/base'; 
+
+
+/* Layouts */
+@import './assets/scss/layouts/header',
+        './assets/scss/layouts/footer';
