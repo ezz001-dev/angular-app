@@ -10,6 +10,16 @@ export class HeaderComponent implements OnInit {
 
   constructor() { }
 
+  listNav : any = [
+    { name : 'Videos' },
+    { name : 'People' },
+    { name : 'Documents' },
+    { name : 'Events' },
+    { name : 'Comunities' },
+    { name : 'Favorites' },
+    { name : 'Chanels' },
+  ]
+
   ngOnInit(): void {
   }
 

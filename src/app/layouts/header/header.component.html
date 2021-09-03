@@ -1,1 +1,28 @@
-<p>header works!</p>
+<section class="header">
+    <nav class="nav-top">
+        <div class="logo">
+            <h1> SocialNetwork </h1>
+        </div>
+        <div class="right-nav">
+            <div class="search">
+                <label for=""></label>
+                <input type="text" placeholder="Find">
+            </div>
+            <div class="upload">
+                <button class="btn-uppload"></button>
+            </div>
+            <div class="profile">
+                <div class="icc-pict">
+
+                </div>
+                <p class="big"> Waseem <span class="small"> Arshad </span> </p>
+            </div>
+        </div>
+    </nav>
+
+    <nav class="nav-btm">
+        <ul>
+            <li *ngFor="let item of listNav">{{ item.name }}</li>
+        </ul>
+    </nav>
+</section>
