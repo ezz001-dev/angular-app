@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, OnInit , Input} from '@angular/core';
 
 @Component({
   selector: 'app-section-global',
@@ -7,10 +7,16 @@ import { Component, OnInit } from '@angular/core';
   ]
 })
 export class SectionGlobalComponent implements OnInit {
-
+  @Input() highLight : any;
+  @Input() right : any;
+  @Input() bottom : any;
+  @Input() dataVideos : any;
   constructor() { }
 
   ngOnInit(): void {
+    // setTimeout(() => {
+      console.log(this.highLight);
+    // }, 1000);
   }
 
 }

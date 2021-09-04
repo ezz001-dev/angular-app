@@ -2,7 +2,7 @@
     <div class="row">
         <div class="col-md-8">
             <div class="title">
-                <h1> Videos </h1>
+                <h3> Videos </h3>
                 <span> Browse All videos </span>
             </div>
             <div class="row">
@@ -10,17 +10,29 @@
                     <div class="card">
                         <img src="../../../assets/img/slider-reward.jpg" alt="">
                         <div class="t-card">
-                            <h2> How To Improve Your Skill </h2>
+                            <h2> {{highLight[0]?.title}} </h2>
                             <div class="c-card">
-                                <p> Washem Arshad </p>
-                                <span> 181818 views </span>
+                                <p> {{highLight[0]?.name}} </p>
+                                <span> {{highLight[0]?.totalViews}} views </span>
                             </div>
                         </div>
                     </div>
                 </div>
-                <div class="col-md-4">
+                <div class="col-md-4 right-content">
                     <div class="row">
-                        <div class="col-md-12 wrapper-card">
+                        <div class="col-md-12 wrapper-card" *ngFor="let item of right">
+                            <div class="card card-mid">
+                                <img src="../../../assets/img/slider-reward.jpg" alt="">
+                                <div class="t-card">
+                                    <h6> {{ item?.title }} </h6>
+                                    <div class="c-card">
+                                        <p> {{ item?.name }} </p>
+                                        <span> {{ item?.totalViews }} views </span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- <div class="col-md-12 wrapper-card">
                             <div class="card">
                                 <div class="t-card">
                                     <h1> How To Improve Your Skill </h1>
@@ -30,23 +42,24 @@
                                     </div>
                                 </div>
                             </div>
-                        </div>
-                        <div class="col-md-12 wrapper-card">
-                            <div class="card">
-                                <div class="t-card">
-                                    <h1> How To Improve Your Skill </h1>
-                                    <div class="c-card">
-                                        <p> Washem Arshad </p>
-                                        <span> 181818 views </span>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
+                        </div> -->
                     </div>
                 </div>
                 <div class="col-md-12">
                     <div class="row">
-                        <div class="col-md-4 wrapper-card">
+                        <div class="col-md-4 wrapper-card " *ngFor="let item of bottom">
+                            <div class="card card-mid">
+                                <img src="../../../assets/img/slider-reward.jpg" alt="">
+                                <div class="t-card">
+                                    <h6> {{item?.title}} </h6>
+                                    <div class="c-card">
+                                        <p> {{item?.name}} </p>
+                                        <span> {{item?.totalViews}} views </span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- <div class="col-md-4 wrapper-card">
                             <div class="card">
                                 <div class="t-card">
                                     <h1> How To Improve Your Skill </h1>
@@ -56,26 +69,15 @@
                                     </div>
                                 </div>
                             </div>
-                        </div>
+                        </div> -->
                         <div class="col-md-4 wrapper-card">
-                            <div class="card">
-                                <div class="t-card">
-                                    <h1> How To Improve Your Skill </h1>
-                                    <div class="c-card">
+                            <div class="card card-mid other-card">
+                                <div class="t-card tcard-other">
+                                    <h6> Upload Your Own Video </h6>
+                                    <!-- <div class="c-card">
                                         <p> Washem Arshad </p>
                                         <span> 181818 views </span>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="col-md-4 wrapper-card">
-                            <div class="card">
-                                <div class="t-card">
-                                    <h1> How To Improve Your Skill </h1>
-                                    <div class="c-card">
-                                        <p> Washem Arshad </p>
-                                        <span> 181818 views </span>
-                                    </div>
+                                    </div> -->
                                 </div>
                             </div>
                         </div>
@@ -83,33 +85,40 @@
                 </div>
             </div>
         </div>
-        <div class="col-md-4 right">
+        <div class="col-md-4 right-section">
             <div class="title">
-                <h1>Activity</h1>
+                <h3>Activity</h3>
                 <div class="sub-title">
                     <span> View timeline / Filter Activities </span>
                 </div>
             </div>
 
-            <div class="row">
-                <div class="col-md-12 right-nav wrapper-card">
-                    <div class="card">
-                        <div class="c-img">
-                            <img src="../../../assets/img/slider-reward.jpg" alt="">
-                        </div>
-                        <div class="c-content">
-                            <div class="t-content">
-                                <h6> John Stainler </h6>
-                                <span> Comented </span>
+
+            <div class="wrapper">
+                <div class="row">
+                    <div class="col-md-12 right-nav wrapper-card " *ngFor="let item of dataVideos">
+                        <div class="card">
+                            <div class="c-img">
+                                <img src="../../../assets/img/slider-reward.jpg" alt="">
                             </div>
-                            <div class="m-content">
-                                <p>Lorem ipsum, dolor sit amet..</p>
-                                <span> 2second ago </span>
+                            <div class="c-content">
+                                <div class="t-content">
+                                    <h6> John Stainler </h6>
+                                    <span> Comented </span>
+                                </div>
+                                <div class="m-content">
+                                    <p>Lorem ipsum, dolor sit amet..</p>
+                                    <span> 2second ago </span>
+                                </div>
+                                <div class="btn-close">
+                                    <span> X </span>
+                                </div>
                             </div>
                         </div>
                     </div>
                 </div>
             </div>
+            
         </div>
     </div>
 </section>
