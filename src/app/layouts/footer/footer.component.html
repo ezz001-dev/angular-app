@@ -1,1 +1,36 @@
-<p>footer works!</p>
+<section class="footer">
+    <div class="row">
+        <div class="col-lg-12 col-md-12 col-sm-12">
+            <div class="social-media">
+                <ul>
+                    <li>
+                        <i class="fab fa-twitter"></i>
+                    </li>
+                    <li>
+                        <i class="fab fa-linkedin-in"></i>
+                    </li>
+                    <li>
+                        <i class="fab fa-facebook-f"></i>
+                    </li>
+                </ul>
+            </div>
+
+            <div class="nav-footer">
+                <ul>
+                    <li *ngFor="let item of footerNav"> {{ item?.name }} </li>
+                </ul>
+            </div>
+
+            <div class="copyright">
+                <p> @Copyright 2021  </p>
+                <div class="privacy-terms">
+                    <ul>
+                        <li> privacy </li>
+                        <li>Terms</li>
+                    </ul>
+                </div>
+            </div>
+
+        </div>
+    </div>
+</section>

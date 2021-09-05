@@ -1,1 +1,67 @@
-<p>documents works!</p>
+<section class="documents">
+    <div class="row">
+        <div class="col-lg-8 col-md-12">
+            <div class="title">
+                <h3> People </h3>
+                <span> Browse All videos </span>
+            </div>
+            <div class="row">
+                <div class="col-md-8 wrapper-card highlight-card">
+                    <div class="card">
+                        <img src="../../../assets/img/slider-reward.jpg" alt="">
+                        <div class="t-card">
+                            <h2> {{highLight[0]?.title}} </h2>
+                            <div class="c-card">
+                                <p> {{highLight[0]?.name}} </p>
+                                <span> {{highLight[0]?.totalViews}} views </span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4 right-content">
+                    <div class="row">
+                        <div class="col-md-12 wrapper-card" *ngFor="let item of right">
+                            <div class="card card-mid">
+                                <img src="../../../assets/img/slider-reward.jpg" alt="">
+                                <div class="t-card">
+                                    <h6> {{ item?.title }} </h6>
+                                    <div class="c-card">
+                                        <p> {{ item?.name }} </p>
+                                        <span> {{ item?.totalViews }} views </span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-12">
+                    <div class="row">
+                        <div class="col-md-4 wrapper-card " *ngFor="let item of bottom">
+                            <div class="card card-mid">
+                                <img src="../../../assets/img/slider-reward.jpg" alt="">
+                                <div class="t-card">
+                                    <h6> {{item?.title}} </h6>
+                                    <div class="c-card">
+                                        <p> {{item?.name}} </p>
+                                        <span> {{item?.totalViews}} views </span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-4 wrapper-card">
+                            <div class="card card-mid other-card">
+                                <div class="t-card tcard-other">
+                                    <h6> Upload Your Own Video </h6>
+                                    <!-- <div class="c-card">
+                                        <p> Washem Arshad </p>
+                                        <span> 181818 views </span>
+                                    </div> -->
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>

@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, OnInit , Input } from '@angular/core';
 
 @Component({
   selector: 'app-documents',
@@ -7,6 +7,10 @@ import { Component, OnInit } from '@angular/core';
   ]
 })
 export class DocumentsComponent implements OnInit {
+  @Input() highLight : any;
+  @Input() right : any;
+  @Input() bottom : any;
+  @Input() dataVideos : any;
 
   constructor() { }
 

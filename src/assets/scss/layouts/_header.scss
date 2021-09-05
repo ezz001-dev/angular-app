@@ -1,6 +1,9 @@
 section.header{
 
+    transition: .5s all;
+
     .nav-top{
+        transition: .5s all;
         position: relative;
         display: flex;
         width: 100%;
@@ -14,6 +17,7 @@ section.header{
     }
 
     .right-nav{
+        transition: .3s all;
         display: flex;
         width: 70%;
         justify-content: space-between;
@@ -44,8 +48,9 @@ section.header{
     }
 
     .upload{
-
+        transition: .3s all;
         position: relative;
+        display: flex;
 
         label{
             position: absolute;
@@ -99,6 +104,7 @@ section.header{
 
 
     .profile{
+        transition: .3s all;
         display: flex;
         justify-content: center;
         align-items: center;
@@ -170,11 +176,11 @@ section.header{
             display: flex;
             justify-content: space-between;
             margin-top: 1rem;
-            padding: 0 1rem;
+            // padding: 0 1rem;
         }
 
         ul{
-            padding: 1rem;
+            padding: 1rem 0;
             list-style: none;
             height: 100%;
             display: flex;
@@ -196,8 +202,46 @@ section.header{
     
 }
 
+@media screen and (max-width : 1024px ) {
+    section.header{
 
-@media screen and (max-width : 768px) {
+        .logo{
+            h1{
+                font-size: 1.8rem;
+            }
+        }
+        
+        .upload{
+            button{
+                padding: .2rem 1.5rem;
+            }
+        }
+
+        .profile{
+            width: 25%;
+
+            .icc-pict{
+                margin: 0 .5rem;
+            }
+    
+            p{
+                font-size: .8rem;
+            }
+        }
+
+        
+        
+        .nav-btm{
+            li{
+                width: auto;
+                padding: 0 1rem;
+            }
+        }
+    }
+}
+
+
+@media screen and (max-width : 768px ) {
     section.header{
 
         .burger{
