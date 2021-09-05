@@ -1,33 +1,101 @@
 <section class="header">
-    <nav class="nav-top">
-        <div class="logo">
-            <h1> SocialNetwork </h1>
-        </div>
-        <div class="right-nav">
-            <div class="search">
-                <label for="">
-                    <i class="fas fa-search"></i>
-                </label>
-                <input type="text" placeholder="Find" class="white-smoke-bg">
+    <!-- <div class="header-desktop">
+        <nav class="nav-top">
+            <div class="logo">
+                <h1> SocialNetwork </h1>
             </div>
-            <div class="upload">
-                <label for="">
-                    <i class="fas fa-arrow-up"></i>
-                </label>
-                <button class="btn-uppload white-smoke-bg">Upload</button>
-            </div>
-            <div class="profile">
-                <div class="icc-pict white-smoke-bg">
-                    <i class="fas fa-user"></i>
+            <div class="right-nav">
+                <div class="search">
+                    <label for="">
+                        <i class="fas fa-search"></i>
+                    </label>
+                    <input type="text" placeholder="Find" class="white-smoke-bg">
                 </div>
-                <p class="big"> Waseem <span class="small"> Arshad </span> </p>
+                <div class="upload">
+                    <label for="">
+                        <i class="fas fa-arrow-up"></i>
+                    </label>
+                    <button class="btn-uppload white-smoke-bg">Upload</button>
+                </div>
+                <div class="profile">
+                    <div class="icc-pict white-smoke-bg">
+                        <i class="fas fa-user"></i>
+                    </div>
+                    <p class="big"> Waseem <span class="small"> Arshad </span> </p>
+                </div>
             </div>
-        </div>
-    </nav>
+        </nav>
+    
+        <nav class="nav-btm">
+            <ul>
+                <li *ngFor="let item of listNav">{{ item.name }}</li>
+            </ul>
+        </nav>
+    </div> -->
 
-    <nav class="nav-btm">
-        <ul>
-            <li *ngFor="let item of listNav">{{ item.name }}</li>
-        </ul>
-    </nav>
+    <div class="header-mobile">
+        <nav class="nav-top">
+            <div class="logo">
+                <h1> SocialNetwork </h1>
+            </div>
+            <div class="right-nav">
+                <div class="search">
+                    <label for="">
+                        <i class="fas fa-search"></i>
+                    </label>
+                    <input type="text" placeholder="Find" class="white-smoke-bg">
+                </div>
+                <div class="upload">
+                    <label for="">
+                        <i class="fas fa-arrow-up"></i>
+                    </label>
+                    <button class="btn-uppload white-smoke-bg">Upload</button>
+                </div>
+                <div class="profile">
+                    <div class="icc-pict white-smoke-bg">
+                        <i class="fas fa-user"></i>
+                    </div>
+                    <p class="big"> Waseem <span class="small"> Arshad </span> </p>
+                </div>
+            </div>
+
+            <!-- burger mobile -->
+            <div class="burger">
+                <i class="fas fa-bars" (click)="openMobile()"></i>
+            </div>
+            <div class="nav-mobile" [ngClass]="{'activate' : isOpen }">
+                <div class="right-mobile">
+                    <div class="search">
+                        <label for="">
+                            <i class="fas fa-search"></i>
+                        </label>
+                        <input type="text" placeholder="Find" class="white-smoke-bg">
+                    </div>
+                    <div class="upload-and-profile">
+                        <div class="upload">
+                            <label for="">
+                                <i class="fas fa-arrow-up"></i>
+                            </label>
+                            <button class="btn-uppload white-smoke-bg">Upload</button>
+                        </div>
+                        <div class="profile">
+                            <div class="icc-pict white-smoke-bg">
+                                <i class="fas fa-user"></i>
+                            </div>
+                            <p class="big"> Waseem <span class="small"> Arshad </span> </p>
+                        </div>
+                    </div>
+                </div>
+                <ul>
+                    <li *ngFor="let item of listNav">{{ item.name }}</li>
+                </ul>
+            </div>
+        </nav>
+    
+        <nav class="nav-btm">
+            <ul>
+                <li *ngFor="let item of listNav">{{ item.name }}</li>
+            </ul>
+        </nav>
+    </div>
 </section>

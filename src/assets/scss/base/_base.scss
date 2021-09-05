@@ -10,8 +10,40 @@
 
 body{
     color: #F4E3CF;
+    background: #953E46;
+}
+
+body.overflow-hidden{
+    overflow: hidden;
 }
 
 .card{
     color: #953E46;
+}
+
+@media screen and (max-width : 1024px ) {
+
+    body{
+
+        h3{
+            font-size: 1.2rem;
+        }
+
+        span{
+            font-size: .9rem;
+        }
+    }
+    
+}
+
+
+
+@media screen and (max-width : 768px) {
+    .row{
+        margin: 0 !important;
+    }
+
+    .col-md-8 , .col-md-4 , .col-md-12{
+        padding: 0 !important;
+    }
 }

@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, OnInit , Renderer2  } from '@angular/core';
 
 @Component({
   selector: 'app-header',
@@ -8,7 +8,10 @@ import { Component, OnInit } from '@angular/core';
 })
 export class HeaderComponent implements OnInit {
 
-  constructor() { }
+  constructor(private renderer : Renderer2 ) { }
+
+  isOpen = false;
+
 
   listNav : any = [
     { name : 'Videos' },
@@ -21,6 +24,16 @@ export class HeaderComponent implements OnInit {
   ]
 
   ngOnInit(): void {
+  }
+
+  openMobile()
+  {
+
+    let body = document.getElementById('body');
+
+    this.isOpen = !this.isOpen;
+    this.isOpen ? this.renderer.addClass(body,'overflow-hidden') : this.renderer.removeClass(body,'overflow-hidden');
+    
   }
 
 }

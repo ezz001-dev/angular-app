@@ -240,3 +240,60 @@ section.section-global{
 
     
 }
+
+
+@media screen and (max-width : 1024px ) {
+    section.section-global{
+
+
+        .right-section{
+
+            .right-nav{
+
+                .c-img{
+                    width: 80px;
+                }
+
+                .c-content{
+                    font-size: .8rem;
+                }
+
+                .m-content{
+                    height: 65%;
+                }
+            }
+        }
+        
+    }
+}
+
+
+@media screen and (max-width : 768px) {
+
+    section.section-global{
+
+
+        // .right-section{
+
+        //     .right-nav{
+
+        //         .c-img{
+        //             width: 80px;
+        //         }
+
+        //         .c-content{
+        //             font-size: .8rem;
+        //         }
+
+        //         .m-content{
+        //             height: 65%;
+        //         }
+        //     }
+        // }
+        
+        .row{
+            margin: 0 !important;
+        }
+    }
+    
+}
