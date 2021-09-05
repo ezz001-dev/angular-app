@@ -1,4 +1,4 @@
-section.section-global{
+section.people{
 
     .title{
         margin-top: 2.5rem;
@@ -31,10 +31,6 @@ section.section-global{
         width: 100%;
         display: flex;
         justify-content: space-between;
-
-        p{
-            margin: 0;
-        }
     }
 
 
@@ -78,6 +74,10 @@ section.section-global{
                 display: flex;
                 justify-content: space-between;
                 margin: 0.5rem 0;
+
+                p{
+                    margin: 0;
+                }
             }
         }
     }
@@ -148,28 +148,27 @@ section.section-global{
                 box-sizing: border-box;
                 position: relative;
                 overflow: hidden;
-                color: #F4E3CF;
     
-                &:hover{
-                    border: 1px solid #F4E3CF;
-                    box-sizing: border-box;
-                    cursor: pointer;
-                }
+                // &:hover{
+                //     border: 1px solid #F4E3CF;
+                //     box-sizing: border-box;
+                //     cursor: pointer;
+                // }
     
-                &:hover::before{
-                    position: absolute;
-                    content: "";
-                    top: -5px;
-                    right: -18px;
-                    width: 0;
-                    height: 0;
-                    border-left: 25px solid transparent;
-                    border-right: 25px solid transparent;
-                    border-bottom: 25px solid #F4E3CF;
-                    transform: rotate(45deg);
-                    display: flex;
-                    justify-content: center;
-                }
+                // &:hover::before{
+                //     position: absolute;
+                //     content: "";
+                //     top: -5px;
+                //     right: -18px;
+                //     width: 0;
+                //     height: 0;
+                //     border-left: 25px solid transparent;
+                //     border-right: 25px solid transparent;
+                //     border-bottom: 25px solid #F4E3CF;
+                //     transform: rotate(45deg);
+                //     display: flex;
+                //     justify-content: center;
+                // }
     
     
                 .btn-close{
@@ -205,9 +204,10 @@ section.section-global{
             }
     
             .c-content{
-                // padding-left: .5rem;
-                width: 65%;
                 padding-right: 1.2rem;
+                width: 100%;
+                display: flex;
+                align-items: end;
             }
     
             .t-content{
@@ -234,6 +234,12 @@ section.section-global{
             border-top: 2px solid;
             border-bottom: 2px solid;
             padding: 1rem 0;
+
+            .card{
+                height: 200px;
+                background: #F4E3CF;
+
+            }
 
         }
     }

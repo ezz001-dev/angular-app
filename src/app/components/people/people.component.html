@@ -1,8 +1,8 @@
-<section class="section-global">
+<section class="people">
     <div class="row">
         <div class="col-md-8">
             <div class="title">
-                <h3> Videos </h3>
+                <h3> People </h3>
                 <span> Browse All videos </span>
             </div>
             <div class="row">
@@ -24,7 +24,7 @@
                             <div class="card card-mid">
                                 <img src="../../../assets/img/slider-reward.jpg" alt="">
                                 <div class="t-card">
-                                    <!-- <h6> {{ item?.title }} </h6> -->
+                                    <h6> {{ item?.title }} </h6>
                                     <div class="c-card">
                                         <p> {{ item?.name }} </p>
                                         <span> {{ item?.totalViews }} views </span>
@@ -40,7 +40,7 @@
                             <div class="card card-mid">
                                 <img src="../../../assets/img/slider-reward.jpg" alt="">
                                 <div class="t-card">
-                                    <!-- <h6> {{item?.title}} </h6> -->
+                                    <h6> {{item?.title}} </h6>
                                     <div class="c-card">
                                         <p> {{item?.name}} </p>
                                         <span> {{item?.totalViews}} views </span>
@@ -65,31 +65,20 @@
         </div>
         <div class="col-md-4 right-section">
             <div class="title">
-                <h3>Activity</h3>
+                <h3>Chanels</h3>
                 <div class="sub-title">
-                    <span> View timeline / Filter Activities </span>
+                    <span> Browse All Chanels </span>
                 </div>
             </div>
 
 
             <div class="wrapper">
                 <div class="row">
-                    <div class="col-md-12 right-nav wrapper-card " *ngFor="let item of dataVideos">
+                    <div class="col-md-6 right-nav wrapper-card " *ngFor="let item of dataVideos">
                         <div class="card">
-                            <div class="c-img">
-                                <img src="../../../assets/img/slider-reward.jpg" alt="">
-                            </div>
                             <div class="c-content">
                                 <div class="t-content">
                                     <h6> John Stainler </h6>
-                                    <span> Comented </span>
-                                </div>
-                                <div class="m-content">
-                                    <p>Lorem ipsum, dolor sit amet..</p>
-                                    <span> 2second ago </span>
-                                </div>
-                                <div class="btn-close">
-                                    <span> X </span>
                                 </div>
                             </div>
                         </div>

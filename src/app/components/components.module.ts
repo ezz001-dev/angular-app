@@ -3,6 +3,8 @@ import { CommonModule } from '@angular/common';
 import { SectionGlobalComponent } from './section-global/section-global.component';
 
 import { FontAwesomeModule } from '@fortawesome/angular-fontawesome';
+import { PeopleComponent } from './people/people.component';
+import { DocumentsComponent } from './documents/documents.component';
 
 
 
@@ -11,9 +13,11 @@ import { FontAwesomeModule } from '@fortawesome/angular-fontawesome';
     CommonModule,
     FontAwesomeModule
   ],
-  declarations: [SectionGlobalComponent],
+  declarations: [SectionGlobalComponent, PeopleComponent, DocumentsComponent],
   exports : [
-    SectionGlobalComponent
+    SectionGlobalComponent,
+    PeopleComponent,
+    DocumentsComponent
   ]
 })
 export class ComponentsModule { }
