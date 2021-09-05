@@ -8,6 +8,7 @@ import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 
 import { appRoutingModule } from './app-routing.module';
 
+
 @NgModule({
   declarations: [
     AppComponent,
